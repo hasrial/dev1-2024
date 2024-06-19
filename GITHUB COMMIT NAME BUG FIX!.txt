@@ -1,0 +1,11 @@
+GITHUB COMMIT NAME BUG FIX!
+
+Changing Your Committer Name & Email Globally typing:
+
+$ git config --global user.name "username"
+$ git config --global user.eamil "user email"
+
+Changing Your Committer Name & Email per Repository typing:
+
+$ git config user.name "username"
+$ git config user.email "user email"
