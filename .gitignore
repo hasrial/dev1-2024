@@ -2,14 +2,15 @@
 
 # dependencies
 /node_modules
-/bin
-/obj
+bin
+obj
 /.pnp
 .pnp.js
 
 # testing
 /coverage
 /xx-Esercitazioni
+/xx-Non-Versionati
 
 # production
 /build
