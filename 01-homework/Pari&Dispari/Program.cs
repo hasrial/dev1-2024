@@ -1,6 +1,6 @@
-﻿
- versione semplificata del gioco pari o dispari
-Random random = new Random();
+﻿// versione semplificata del gioco pari o dispari
+
+Random random = new Random(); 
 int numeroComputer = random.Next(1, 11);
 
 Console.Write("Scegli Pari o Dispari (P/D): ");

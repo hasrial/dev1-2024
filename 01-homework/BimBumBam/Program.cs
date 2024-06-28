@@ -13,9 +13,9 @@ bool sommaPari = (numero1 + numeroComputer) % 2 == 0;
 
 if ((sommaPari && scelta == "P") || (!sommaPari && scelta == "D"))
  {
-    Console.WriteLine("Hai Vinto"); 
+    Console.WriteLine($"Hai Vinto {numeroComputer} & {numero1}"); 
  }
 else 
 {
-    Console.WriteLine("Hai Perso");
+    Console.WriteLine($"Hai Perso {numeroComputer} & {numero1}");
 }
