@@ -99,3 +99,6 @@ gitGraph
    commit
    commit
 ```
+
+### Creazione di file REDAME.md dal prompt
+echo <<REDAME.md
