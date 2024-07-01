@@ -7,7 +7,7 @@ string scelta = Console.ReadLine().ToUpper();
 Random random = new Random();
 int numeroComputer = random.Next(0, 5);
 
-Console.Write("Inserisci il tuo numero: ");
+Console.WriteLine("Inserisci il tuo numero: ");
 int numero1 = Convert.ToInt32(Console.ReadLine());
 bool sommaPari = (numero1 + numeroComputer) % 2 == 0;
 
