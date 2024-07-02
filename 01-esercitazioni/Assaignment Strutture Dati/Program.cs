@@ -153,4 +153,4 @@ default:
     break;
 }
 }
-while (scelta !=6); // il ciclo continua finchè la seclta è divera da 4
+while (scelta !=6); // il ciclo continua finchè la seclta è divera da 6
