@@ -1,6 +1,6 @@
 # ELENCO COMPAGNI DI CORSO CON SORTEGGIO
-## v.1
 
+## v.1
 Creare una console app che contiene un elenco di nomi dei parteipanti del cosro
 L'app sorteggia un nome e lo visualizza.
 
@@ -47,3 +47,42 @@ L'app sorteggia un nome e lo visualizza.
 L'app toglie dalla lista il nome sorteggiato
 L'app visualizza la lista dei nomi rimanenti
 L'app sposta i nomi dalla lista elenco e dopo aver sorteggiato il nome lo esporta in un altra lista
+
+## v.5
+Creare una console app che contiene un elenco di nomi dei parteipanti del cosro
+L'app sorteggia un nome e lo visualizza.
+L'app toglie dalla lista il nome sorteggiato
+L'app visualizza la lista dei nomi rimanenti
+L'app sposta i nomi dalla lista elenco e dopo aver sorteggiato il nome lo esporta in un altra lista
+L'app ordina la lista in ordine alfabetico
+
+```csharp
+partecipanti.Sort();
+partecipanti.Reverse(); 
+```
+## v.6
+Creare una console app che contiene un elenco di nomi dei parteipanti del cosro
+L'app sorteggia un nome e lo visualizza.
+L'app toglie dalla lista il nome sorteggiato
+L'app visualizza la lista dei nomi rimanenti
+L'app sposta i nomi dalla lista elenco e dopo aver sorteggiato il nome lo esporta in un altra lista
+L'app ordina la lista in ordine alfabetico
+L'app permette di cercare un partecipante nella lista
+
+```csharp
+lista.Contains(nome)
+```
+## v.7
+Creare una console app che contiene un elenco di nomi dei parteipanti del cosro
+L'app sorteggia un nome e lo visualizza.
+L'app toglie dalla lista il nome sorteggiato
+L'app visualizza la lista dei nomi rimanenti
+L'app sposta i nomi dalla lista elenco e dopo aver sorteggiato il nome lo esporta in un altra lista
+L'app ordina la lista in ordine alfabetico
+L'app permette di cercare un partecipante nella lista
+L'app permette di eliminare un partecipante dalla lista
+
+```csharp
+lista.Remove(nome);
+int indice = partecipanti.IndexOf(nome); //restituisce l'indice del nome nella lista
+```
