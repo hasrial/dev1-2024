@@ -58,6 +58,8 @@ while (nomi.Count > 0)
 */
 
 
+using System.ComponentModel;
+
 List<string> nomi = new List<string>();
 string nome;
 int scelta;
@@ -66,7 +68,9 @@ do
     Console.WriteLine ("1. Inserisci partecipante");
     Console.WriteLine ("2. Visualizza partecipante");
     Console.WriteLine ("3. Ordina partecipanti");
-    Console.WriteLine ("4. Esci");
+    Console.WriteLine ("4. Cerca partecipante");
+    Console.WriteLine ("5. Eliminare partecipante");
+    Console.WriteLine ("6. Esci");
     Console.WriteLine ("Scelta: ");
     scelta = Convert.ToInt32(Console.ReadLine());
 switch (scelta)
@@ -75,7 +79,15 @@ case 1:
     Console.Write("Nome partecipante: ");
     nome = Console.ReadLine();
     nomi.Add(nome);
-    break;
+    if (nomi.Contains(nome))
+        {
+            Console.WriteLine("Nome gia presente nella lista, aggiungere nuovo nome: ");
+            string nuovoNome = Console.ReadLine();
+            int indice = nomi.IndexOf(nome);
+            nomi[indice] = nuovoNome;
+            Console.WriteLine("Il nuovo partecipante è stato inserito");
+        }  
+break;
 case 2:
     Console.WriteLine("Elenco partecipanti:");
     foreach (string nom in nomi)
@@ -110,6 +122,30 @@ case 3:
         }
 break;
 case 4:
+    Console.WriteLine ("Inserire nome del partecipante: ");
+    nome = Console.ReadLine();
+    if (nomi.Contains(nome))
+        {
+            Console.WriteLine("Il partecipante è nella lista");
+        }
+    else
+        {
+            Console.WriteLine("Il partecipante non è nella lista");
+        }
+break;
+case 5:
+    Console.WriteLine ("Inserire il nome del partecipante da eliminare");
+    nome = Console.ReadLine();
+    if (nomi.Contains(nome))
+        {
+            nomi.Remove(nome);
+        }
+    else
+        {
+            Console.WriteLine("Il nome non è presente nella lista");
+        }
+break;
+case 6:
 Console.WriteLine ("Alla prossima");
     break;
 default:
@@ -117,4 +153,4 @@ default:
     break;
 }
 }
-while (scelta !=4); // il ciclo continua finchè la seclta è divera da 4
+while (scelta !=6); // il ciclo continua finchè la seclta è divera da 4
